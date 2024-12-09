@@ -2,6 +2,11 @@
     --orange: #FEC88A;
     --red: #BF6053;
     --red-hover: #a14647;
+    --background: #35363B;
+}
+
+html {
+    background-color: var(--background);
 }
 
 * {
@@ -50,7 +55,7 @@ nav a:hover {
 }
 
 ul {
-    margin-left: 224px;
+    margin-left: 458px;
     display: flex;
     gap: 64px;
     align-items: center;
@@ -60,7 +65,7 @@ ul {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 220px;
+    margin-right: 500px;
 }
 
 .search-icon {
@@ -92,8 +97,71 @@ input[type="search"]:focus {
 
 .container {
     width: 1000px;
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 440px;
+    margin-right: 440px;
+}
+
+main {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.soup {
+    background-image: url('img/soupe.jpg');
+    width: 300px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.border {
+    border-top: solid 2px var(--orange);
+    border-bottom: solid 2px var(--orange);
+    width: 80%;
+}
+
+.soup p {
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salad {
+    background-image: url('img/salade.jpg');
+    width: 300px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.salad p {
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dessert {
+    background-image: url('img/dessert.jpg');
+    width: 300px;
+    height: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dessert p {
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @font-face {
