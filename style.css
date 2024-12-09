@@ -1,6 +1,13 @@
+:root {
+    --orange: #FEC88A;
+    --red: #9F3839;
+}
+
 * {
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 .banner {
@@ -23,4 +30,59 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+nav {
+    background-color: var(--orange);
+    display: flex;
+    height: 64px;
+}
+
+nav a {
+    color: #BF6053;
+}
+
+ul {
+    margin-left: 224px;
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 220px;
+}
+
+.search-icon {
+    display: flex;
+    margin-right: 0px;
+    width: 37px;
+    height: 37px;
+    background-color: var(--red);
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="search"] {
+    align-items: center;
+    border: solid 1px var(--red);
+    background-color: transparent;
+    padding: 10px;
+}
+
+input[type="search"]::placeholder {
+    color: var(--red);
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+.container {
+    width: 1000px;
+    margin-left: 220px;
+    margin-right: 220px;
 }
