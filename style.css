@@ -26,7 +26,7 @@ h1 {
 }
 
 .banner {
-    background-image: url('img/bg_header.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bg_header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 475px;
@@ -44,7 +44,6 @@ h1 {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 nav {
@@ -192,6 +191,14 @@ main {
     border-top: solid 2px var(--red);
     border-bottom: solid 2px var(--red);
     width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.big-border-red {
+    border-top: solid 2px var(--red);
+    border-bottom: solid 2px var(--red);
+    width: 106.8%;
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -390,17 +397,40 @@ main {
     margin-top: 32px;
 }
 
+.ml {
+    margin-left: 16px;
+}
+
+.pl {
+    padding-left: 16px;
+}
+
+.mr {
+    margin-right: 16px;
+}
+
+.pr {
+    padding-right: 16px;
+}
+
+.album-container {
+    width: 904px;
+}
+
 .album-photos {
+    width: 106.8%;
     margin-top: 32px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
 }
 
 .album-photos img {
-    width: 300px;
-    height: 210px;
+    width: 280px;
+    height: 190px;
 }
 
 footer {
