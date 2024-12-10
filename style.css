@@ -91,6 +91,7 @@ input[type="search"] {
     border: solid 1px var(--darkred);
     background-color: transparent;
     padding: 10px;
+    color: var(--red);
 }
 
 input[type="search"]::placeholder {
@@ -100,6 +101,7 @@ input[type="search"]::placeholder {
 
 input[type="search"]:focus {
     font-family: 'Poppins-Regular';
+    font-weight: bold;
     outline: none;
 }
 
@@ -324,6 +326,64 @@ main {
 .link img {
     width: 24px;
     height: 24px;
+}
+
+.card-beer {
+    margin-top: 32px;
+    background-image: url('img/bieres.jpg');
+    background-size: cover;
+    height: 385px;
+    background-repeat: no-repeat;
+    padding: 10px; 
+}
+
+.card-coffee {
+    margin-top: 32px;
+    background-image: url('img/cafe.jpg');
+    background-size: cover;
+    height: 385px;
+    background-repeat: no-repeat;
+    padding: 10px; 
+}
+
+.card-border {
+    position: relative;
+    border: 2px solid var(--orange); 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-border button {
+    position: absolute;
+    margin-top: 296px;
+}
+
+.card-beer h1 {
+    font-size: 32px;
+}
+
+.card-beer h2 {
+    color: var(--orange);
+    font-size: 18px;
+}
+
+.card-coffee h1 {
+    font-size: 32px;
+}
+
+.card-coffee h2 {
+    color: var(--orange);
+    font-size: 18px;
 }
 
 @font-face {
