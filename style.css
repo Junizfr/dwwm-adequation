@@ -386,6 +386,23 @@ main {
     font-size: 18px;
 }
 
+.mt {
+    margin-top: 32px;
+}
+
+.album-photos {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.album-photos img {
+    width: 300px;
+    height: 210px;
+}
+
 @font-face {
     font-family: 'Poppins-Regular';
     src: url('/fonts/Poppins-Regular.ttf');
