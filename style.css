@@ -1,7 +1,9 @@
 :root {
     --orange: #FEC88A;
     --red: #BF6053;
+    --darkred: #9F3839;
     --red-hover: #a14647;
+    --green: #C2C57E;
     --background: #35363B;
 }
 
@@ -15,6 +17,12 @@ html {
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins-Regular', sans-serif;
+}
+
+h1 {
+    display: flex;
+    color: var(--orange);
+    justify-content: center;
 }
 
 .banner {
@@ -73,14 +81,14 @@ ul {
     margin-right: 0px;
     width: 42px;
     height: 42px;
-    background-color: #9F3839;
+    background-color: var(--darkred);
     align-items: center;
     justify-content: center;
 }
 
 input[type="search"] {
     align-items: center;
-    border: solid 1px #9F3839;
+    border: solid 1px var(--darkred);
     background-color: transparent;
     padding: 10px;
 }
@@ -105,6 +113,7 @@ main {
     display: flex;
     gap: 32px;
     margin-top: 32px;
+    margin-bottom: 32px;
     justify-content: center;
     align-items: center;
     font-size: 32px;
@@ -162,6 +171,104 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: flex-column;
+}
+
+.left {
+    margin-left: 16px;
+    display: flex;
+    width: 63.3%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.border-red {
+    border-top: solid 2px var(--red);
+    border-bottom: solid 2px var(--red);
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+}
+
+.card {
+    width: 100%;
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-background {
+    width: 100%;
+}
+
+.card-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-top: -32px;
+    margin-bottom: 8px;
+}
+
+.card-category {
+    color: var(--red);
+}
+
+.card-title {
+    color: var(--background);
+}
+
+.card-author {
+    color: var(--background);
+    margin-bottom: 8px;
+}
+
+.card p {
+    text-align: center;
+    color: var(--background)
+}
+
+.btn-red {
+    margin-top: 16px;
+    background-color: var(--darkred);
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    margin-bottom: 16px;
+}
+
+.btn-red:hover {
+    background-color: var(--red-hover);
+}
+
+.duo-card {
+    display: flex;
+    gap: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.small-card {
+    background-color: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-card p {
+    text-align: center;
+    color: var(--background)
+}
+
+.right {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
 }
 
 @font-face {
