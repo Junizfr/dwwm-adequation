@@ -401,18 +401,6 @@ main {
     margin-left: 16px;
 }
 
-.pl {
-    padding-left: 16px;
-}
-
-.mr {
-    margin-right: 16px;
-}
-
-.pr {
-    padding-right: 16px;
-}
-
 .album-container {
     width: 904px;
 }
