@@ -62,7 +62,7 @@ nav a:hover {
     color: var(--red-hover);
 }
 
-ul {
+nav ul {
     margin-left: 458px;
     display: flex;
     gap: 64px;
@@ -401,6 +401,45 @@ main {
 .album-photos img {
     width: 300px;
     height: 210px;
+}
+
+footer {
+    background-image: url('img/Calque.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+.footer {
+    width: 1000px;
+    margin-left: 440px;
+    margin-right: 440px;
+}
+
+.nav-links {    
+    padding-top: 32px;
+    display: flex;
+}
+
+.nav-links ul {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    margin-left: auto;
+}
+
+.nav-links a {
+    color: #B1B1B1;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.footer-text {
+    color: #ECECEC;
+    margin-top: 8px;
+    text-align: end;
 }
 
 @font-face {
